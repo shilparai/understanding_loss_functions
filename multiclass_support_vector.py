@@ -35,7 +35,7 @@ def getListOfFiles(dirName):
 
     return allFiles
 
-imagePaths = getListOfFiles("./pyimagesearch/datasets_mask/")
+imagePaths = getListOfFiles("./datasets_mask/")
 
 data = []
 lables = []
@@ -128,7 +128,7 @@ X_test -= mean_image
 X_train = np.hstack([X_train, np.ones((X_train.shape[0], 1))])
 X_test = np.hstack([X_test, np.ones((X_test.shape[0], 1))])
 
-## source: Stanforf University
+## source: Stanford University
 def svm_loss_naive(W, X, y, reg):
   """
   Structured SVM loss function, naive implementation (with loops).
