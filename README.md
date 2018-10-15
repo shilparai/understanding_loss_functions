@@ -17,5 +17,8 @@ Definition of linear classifier, which maps weights matrix **W** of size **C x D
 
 Linear classifier computes the score of a class as a weighted sum of all of its pixel values across all 3 of its color channels.
 
+<img height = "204" src = "https://github.com/shilparai/understanding_loss_functions/blob/master/linear_classifier.jpg">
+
+
 # Multiclass Support Vector Machine loss
-SVM loss is the commonly used loss function. Simple idea behind SVM loss is that, it tends to have higher scores for the correct class of i<sup>th</sup> image and lower scores to the incorrect class. This loss function is also called *Hinge Loss Function*. **multiclass_support_vector.py** shows the implementation of SVM loss function for cat-dog datasets.
+SVM loss is the commonly used loss function. Simple idea behind SVM loss is that, it tends to have higher scores for the correct class of i<sup>th</sup> image and lower scores to the incorrect classes. This loss function is also called *Hinge Loss Function*. **multiclass_support_vector.py** shows the implementation of SVM loss function for cat-dog datasets.
